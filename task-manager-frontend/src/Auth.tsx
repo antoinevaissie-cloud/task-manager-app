@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { User } from 'firebase/auth';
-import { auth, signInWithGoogle, signOut } from './firebase';
+import { auth, signInWithGoogle } from './firebase';
 
 interface AuthProps {
   children: (user: User | null, loading: boolean) => React.ReactNode;
